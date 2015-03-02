@@ -1,0 +1,89 @@
+<svg
+	xmlns="http://www.w3.org/2000/svg"
+	width="160"
+	height="480"
+	viewBox="0 0 80 240"
+  onload="animation.run()">
+	<g>
+		<circle
+			cx="40" cy="60" r="38"
+			style="fill: white; stroke: black; stroke-width: 2;">
+		</circle>
+		<circle
+			id="echo"
+			cx="40" cy="60" r="38"
+			style="fill: white; stroke-width: 2; stroke: black;">
+		</circle>
+		<circle
+			cx="40" cy="60" r="10"
+			style="fill: black;">
+		</circle>
+		<path
+			d="M 40,239 C 80,112 -16,136 40,1"
+			style="fill: none; stroke: black; stroke-width: 2; stroke-linecap:round;">
+		</path>
+		<path
+			d="M 2,200 C 44.140088,140.58632 90.463382,228.88314 74,212 -13.273888,122.50095 38.113946,42.570973 79,1"
+			style="fill: none; stroke: black; stroke-width: 2; stroke-linecap:round;">
+		</path>
+		<circle
+			id="pulsar"
+			cx="40" cy="140" r="10"
+			style="fill: white; stroke-width: 2; stroke: black;">
+		</circle>
+		<circle
+			cx="40" cy="140" r="10"
+			style="fill: black;">
+		</circle>
+		<circle
+			cx="40" cy="200" r="5"
+			style="fill: black;">
+		</circle>
+		<circle
+			cx="72" cy="8" r="6"
+			style="fill: black;">
+		</circle>
+	</g>
+<script><![CDATA[
+	var animation = (function() {
+		var pulsar = document.getElementById("pulsar");
+		var echo = document.getElementById("echo");
+
+		var pulsarRadius = +pulsar.getAttribute("r");
+		var maxRadius = 20;
+		var minRadius = 10;
+		var echoRadius = +echo.getAttribute("r");
+
+		var fps = 60;    //Frames Per Second
+		var distancePerSecond = 1.2; //velocity of eyelids moving
+		var distancePerFrame =  distancePerSecond / fps;
+		var timer = null;
+
+		var setTimer = function() {
+			timer = setInterval(pulse, 1000 / fps);
+		};
+
+		var pulse = function() {
+			if (pulsarRadius < minRadius || pulsarRadius > maxRadius) distancePerFrame *= -1;
+			pulsarRadius += distancePerFrame;
+			pulsar.setAttributeNS(null, "r", pulsarRadius);
+			echoRadius -= distancePerFrame * 2;
+			echo.setAttributeNS(null, "r", echoRadius);
+		};
+
+		return {
+			run: setTimer
+		}
+	})();
+]]></script>
+</svg>
+
+
+
+
+
+
+
+
+
+
