@@ -1,66 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<link href="css/style.css" type="text/css" rel="stylesheet">
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>V.D. - Photo:Places</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/cascade-gallery-style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 <body>
-	<ul class="navigation">
-	   	<ul>
-			<li><b><a class="dot" href="index.html">HOME</a></b></li>
-            <li>&#8226</li>
-            <li><b><a class="dot" href="about.html">ABOUT</a></b></li>
-            <li>&#8226</li>
-            <li><b>PHOTO:</b></li>
-            <ul>
-                <li><a class="dot" href="places.html">PLACES</a></li>
-                <li><a class="dot" href="people.html">PEOPLE</a></li>
-                <li><a class="dot" href="misc.html">MISC</a></li>
-            </ul>
-            <li>&#8226</li>
-            <li><b>ART:</b></li>
-            <li><a class="dot" href="slumbers.html">SLUMBERS</a></li>
-            <li><a class="dot" href="veils.html">VEILS</a></li>
-        </ul>
-	</ul>
-    <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
-    <label for="nav-trigger"></label>
-    <div class="wrapper">
-        <div id="gallery-wrapper">
-            <h1>PHOTO: PLACES</h1>
-            <div id="thumbnails-wrapper">
-                <a id="thmbnl22" href="#"><img src="img/landscape/1411_morning-on-the-river/0.jpg"></a>
-                <a id="thmbnl21" href="#"><img src="img/landscape/1410_towers/0.jpg"></a>
-                <a id="thmbnl20" href="#"><img src="img/landscape/1410_sunny-october/0.jpg"></a>
-                <a id="thmbnl19" href="#"><img src="img/landscape/1410_fairy-swamp/0.jpg"></a>
-                <a id="thmbnl18" href="#"><img src="img/landscape/1406_clouds/0.jpg"></a>
-                <a id="thmbnl17" href="#"><img src="img/landscape/1405_morning/0.jpg"></a>
-                <a id="thmbnl16" href="#"><img src="img/landscape/1404_fountain/0.jpg"></a>
-                <a id="thmbnl15" href="#"><img src="img/landscape/1400_rivne-chernigiv/0.jpg"></a>
-                <a id="thmbnl14" href="#"><img src="img/landscape/1400_15-floor/0.jpg"></a>
-                <a id="thmbnl13" href="#"><img src="img/landscape/1310_chernigiv/0.jpg"></a>
-                <a id="thmbnl12" href="#"><img src="img/landscape/1309_dubna-sea/0.jpg"></a>
-                <a id="thmbnl11" href="#"><img src="img/landscape/1305_crimea/0.jpg"></a>
-                <a id="thmbnl10" href="#"><img src="img/landscape/1303_around-krasnodon/0.jpg"></a>
-                <a id="thmbnl9" href="#"><img src="img/landscape/1302_melancholy/0.jpg"></a>
-                <a id="thmbnl8" href="#"><img src="img/landscape/1302_hydropark/0.jpg"></a>
-                <a id="thmbnl7" href="#"><img src="img/landscape/1212_winter/0.jpg"></a>
-                <a id="thmbnl6" href="#"><img src="img/landscape/1212_evening/0.jpg"></a>
-                <a id="thmbnl5" href="#"><img src="img/landscape/1211_winter-beach/0.jpg"></a>
-                <a id="thmbnl4" href="#"><img src="img/landscape/1211_pier/0.jpg"></a>
-                <a id="thmbnl3" href="#"><img src="img/landscape/1211_kaluga/0.jpg"></a>
-                <a id="thmbnl2" href="#"><img src="img/landscape/1211_boats/0.jpg"></a>
-                <a id="thmbnl1" href="#"><img src="img/landscape/1209_forefeeling/0.jpg"></a>
-                <a id="thmbnl0" href="#"><img src="img/landscape/1207_church/0.jpg"></a>
-            </div>
-            <div class="buffer"></div>
-	    </div>
-        <div class="footer">&copy; Valentyn Danilichev</div>
-    </div>
-    <script type="text/javascript" src="js/cascade-gallery.js"></script>
+
+  <input type="checkbox" id="drawer-toggle">
+  <label for="drawer-toggle" id="drawer-toggle-label"></label>
+
+  <nav id="drawer">
+    <ul>
+      <li><b><a class="dot" href="index.html">HOME</a></b></li>
+      <li><b><a class="dot" href="about.html">ABOUT</a></b></li>
+      <li><b>PHOTO:</b></li>
+      <li>P L A C E S</li>
+      <li><a class="dot" href="people.html">PEOPLE</a></li>
+      <li><a class="dot" href="misc.html">MISC</a></li>
+      <li><b>ART:</b></li>
+      <li><a class="dot" href="slumbers.html">SLUMBERS</a></li>
+      <li><a class="dot" href="veils.html">VEILS</a></li>
+    </ul>
+  </nav>
+
+  <div id="content">
+    <div id="gallery-wrapper">
+      <div id="gallery-title"><h2>PHOTO: PLACES</h2></div>
+      <div id="thumbnails-wrapper">
+        <a id="thmbnl22" href="#"><img src="img/landscape/1411_morning-on-the-river/0.jpg"></a>
+        <a id="thmbnl21" href="#"><img src="img/landscape/1410_towers/0.jpg"></a>
+        <a id="thmbnl20" href="#"><img src="img/landscape/1410_sunny-october/0.jpg"></a>
+        <a id="thmbnl19" href="#"><img src="img/landscape/1410_fairy-swamp/0.jpg"></a>
+        <a id="thmbnl18" href="#"><img src="img/landscape/1406_clouds/0.jpg"></a>
+        <a id="thmbnl17" href="#"><img src="img/landscape/1405_morning/0.jpg"></a>
+        <a id="thmbnl16" href="#"><img src="img/landscape/1404_fountain/0.jpg"></a>
+        <a id="thmbnl15" href="#"><img src="img/landscape/1400_rivne-chernigiv/0.jpg"></a>
+        <a id="thmbnl14" href="#"><img src="img/landscape/1400_15-floor/0.jpg"></a>
+        <a id="thmbnl13" href="#"><img src="img/landscape/1310_chernigiv/0.jpg"></a>
+        <a id="thmbnl12" href="#"><img src="img/landscape/1309_dubna-sea/0.jpg"></a>
+        <a id="thmbnl11" href="#"><img src="img/landscape/1305_crimea/0.jpg"></a>
+        <a id="thmbnl10" href="#"><img src="img/landscape/1303_around-krasnodon/0.jpg"></a>
+        <a id="thmbnl9" href="#"><img src="img/landscape/1302_melancholy/0.jpg"></a>
+        <a id="thmbnl8" href="#"><img src="img/landscape/1302_hydropark/0.jpg"></a>
+        <a id="thmbnl7" href="#"><img src="img/landscape/1212_winter/0.jpg"></a>
+        <a id="thmbnl6" href="#"><img src="img/landscape/1212_evening/0.jpg"></a>
+        <a id="thmbnl5" href="#"><img src="img/landscape/1211_winter-beach/0.jpg"></a>
+        <a id="thmbnl4" href="#"><img src="img/landscape/1211_pier/0.jpg"></a>
+        <a id="thmbnl3" href="#"><img src="img/landscape/1211_kaluga/0.jpg"></a>
+        <a id="thmbnl2" href="#"><img src="img/landscape/1211_boats/0.jpg"></a>
+        <a id="thmbnl1" href="#"><img src="img/landscape/1209_forefeeling/0.jpg"></a>
+        <a id="thmbnl0" href="#"><img src="img/landscape/1207_church/0.jpg"></a>
+      </div>
+	</div>
+    <div class="buffer"></div>
+  </div>
+
+  <div class="footer">&copy; Valentyn Danilichev</div>
+
+  <script type="text/javascript" src="js/cascade-gallery.js"></script>
     <script>
         window.onload = function() {
             gallery.init(
@@ -231,7 +244,7 @@
                     images: [
                         "img/landscape/1207_church/1.jpg" ]}
 
-                );
+            );
         }
     </script>
 </body>

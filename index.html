@@ -1,38 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<link href="css/style.css" type="text/css" rel="stylesheet">
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>V.Danilichev - Home</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/cascade-gallery-style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 <body>
-	<div class="wrapper">
-        <div class="title">
-            <div class="title-emblem">
-                <object data="img/title.svg" type="image/svg+xml"></object>
-            </div>
-            <div class="title-navigation">
-                <h1>Valentyn<br>Danilichev</h1>
-                <ul>
-                    <li><b><a class="dot" href="about.html">ABOUT</a></b></li>
-                    <li>&#8226</li>
-                    <li><b>PHOTO:</b></li>
-                    <ul>
-                        <li><a class="dot" href="places.html">PLACES</a></li>
-                        <li><a class="dot" href="people.html">PEOPLE</a></li>
-                        <li><a class="dot" href="misc.html">MISC</a></li>
-                    </ul>
-                    <li>&#8226</li>
-                    <li><b>ART:</b></li>
-                    <li><a class="dot" href="slumbers.html">SLUMBERS</a></li>
-                    <li><a class="dot" href="veils.html">VEILS</a></li>
-                </ul>
-            </div>
-			<div class="buffer"></div>
-        </div>
-		<div class="footer">&copy; Valentyn Danilichev</div>
-	</div>
+
+  <input type="checkbox" id="drawer-toggle">
+  <label for="drawer-toggle" id="drawer-toggle-label"></label>
+
+  <nav id="drawer">
+    <ul>
+      <li><b><a class="dot" href="about.html">ABOUT</a></b></li>
+      <li><b>PHOTO:</b></li>
+      <li><a class="dot" href="places.html">PLACES</a></li>
+      <li><a class="dot" href="people.html">PEOPLE</a></li>
+      <li><a class="dot" href="misc.html">MISC</a></li>
+      <li><b>ART:</b></li>
+      <li><a class="dot" href="slumbers.html">SLUMBERS</a></li>
+      <li><a class="dot" href="veils.html">VEILS</a></li>
+    </ul>
+  </nav>
+
+  <div id="content">
+    <div class="emblem-wrapper">
+      <object class="emblem" data="img/emblem.svg" type="image/svg+xml"></object>
+    </div>
+    <div class="buffer"></div>
+  </div>
+
+  <div class="footer">&copy; Valentyn Danilichev</div>
 </body>
 </html>

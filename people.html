@@ -1,62 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<link href="css/style.css" type="text/css" rel="stylesheet">
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>V.D. - Photo:People</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main-style.css">
+  <link rel="stylesheet" href="css/cascade-gallery-style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
 </head>
 <body>
-	<ul class="navigation">
-	   	<ul>
-			<li><b><a class="dot" href="index.html">HOME</a></b></li>
-            <li>&#8226</li>
-            <li><b><a class="dot" href="about.html">ABOUT</a></b></li>
-            <li>&#8226</li>
-            <li><b>PHOTO:</b></li>
-            <ul>
-                <li><a class="dot" href="places.html">PLACES</a></li>
-                <li><a class="dot" href="people.html">PEOPLE</a></li>
-                <li><a class="dot" href="misc.html">MISC</a></li>
-            </ul>
-            <li>&#8226</li>
-            <li><b>ART:</b></li>
-            <li><a class="dot" href="slumbers.html">SLUMBERS</a></li>
-            <li><a class="dot" href="veils.html">VEILS</a></li>
-        </ul>
-	</ul>
-    <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
-    <label for="nav-trigger"></label>
-    <div class="wrapper">
-        <div id="gallery-wrapper">
-            <h1>PHOTO: PEOPLE</h1>
-            <div id="thumbnails-wrapper">
-                <a id="thmbnl18" href="#"><img src="img/people/1411_ann/0.jpg"></a>
-                <a id="thmbnl17" href="#"><img src="img/people/1410_young-che/0.jpg"></a>
-                <a id="thmbnl16" href="#"><img src="img/people/1410_olenka/0.jpg"></a>
-                <a id="thmbnl15" href="#"><img src="img/people/1410_artem/0.jpg"></a>
-                <a id="thmbnl14" href="#"><img src="img/people/1409_ann/0.jpg"></a>
-                <a id="thmbnl13" href="#"><img src="img/people/1408_valya/0.jpg"></a>
-                <a id="thmbnl12" href="#"><img src="img/people/1408_ira/0.jpg"></a>
-                <a id="thmbnl11" href="#"><img src="img/people/1407_shaman/0.jpg"></a>
-                <a id="thmbnl10" href="#"><img src="img/people/1406_last-viking/0.jpg"></a>
-                <a id="thmbnl9" href="#"><img src="img/people/1406_alina/0.jpg"></a>
-                <a id="thmbnl8" href="#"><img src="img/people/1404_storyteller/0.jpg"></a>
-                <a id="thmbnl7" href="#"><img src="img/people/1402_evil-cupid/0.jpg"></a>
-                <a id="thmbnl6" href="#"><img src="img/people/1312_valya/0.jpg"></a>
-                <a id="thmbnl5" href="#"><img src="img/people/1312_kobec/0.jpg"></a>
-                <a id="thmbnl4" href="#"><img src="img/people/1311_borysovych/0.jpg"></a>
-                <a id="thmbnl3" href="#"><img src="img/people/1310_lyoha/0.jpg"></a>
-                <a id="thmbnl2" href="#"><img src="img/people/1310_alenka/0.jpg"></a>
-                <a id="thmbnl1" href="#"><img src="img/people/1308_maksik/0.jpg"></a>
-                <a id="thmbnl0" href="#"><img src="img/people/1308_artemka/0.jpg"></a>
-            </div>
-            <div class="buffer"></div>
-	    </div>
-        <div class="footer">&copy; Valentyn Danilichev</div>
-    </div>
-    <script type="text/javascript" src="js/cascade-gallery.js"></script>
+
+  <input type="checkbox" id="drawer-toggle">
+  <label for="drawer-toggle" id="drawer-toggle-label"></label>
+
+  <nav id="drawer">
+    <ul>
+      <li><b><a class="dot" href="index.html">HOME</a></b></li>
+      <li><b><a class="dot" href="about.html">ABOUT</a></b></li>
+      <li><b>PHOTO:</b></li>
+      <li><a class="dot" href="places.html">PLACES</a></li>
+      <li>P E O P L E</li>
+      <li><a class="dot" href="misc.html">MISC</a></li>
+      <li><b>ART:</b></li>
+      <li><a class="dot" href="slumbers.html">SLUMBERS</a></li>
+      <li><a class="dot" href="veils.html">VEILS</a></li>
+    </ul>
+  </nav>
+
+  <div id="content">
+    <div id="gallery-wrapper">
+      <div id="gallery-title"><h2>PHOTO: PEOPLE</h2></div>
+      <div id="thumbnails-wrapper">
+        <a id="thmbnl18" href="#"><img src="img/people/1411_ann/0.jpg"></a>
+        <a id="thmbnl17" href="#"><img src="img/people/1410_young-che/0.jpg"></a>
+        <a id="thmbnl16" href="#"><img src="img/people/1410_olenka/0.jpg"></a>
+        <a id="thmbnl15" href="#"><img src="img/people/1410_artem/0.jpg"></a>
+        <a id="thmbnl14" href="#"><img src="img/people/1409_ann/0.jpg"></a>
+        <a id="thmbnl13" href="#"><img src="img/people/1408_valya/0.jpg"></a>
+        <a id="thmbnl12" href="#"><img src="img/people/1408_ira/0.jpg"></a>
+        <a id="thmbnl11" href="#"><img src="img/people/1407_shaman/0.jpg"></a>
+        <a id="thmbnl10" href="#"><img src="img/people/1406_last-viking/0.jpg"></a>
+        <a id="thmbnl9" href="#"><img src="img/people/1406_alina/0.jpg"></a>
+        <a id="thmbnl8" href="#"><img src="img/people/1404_storyteller/0.jpg"></a>
+        <a id="thmbnl7" href="#"><img src="img/people/1402_evil-cupid/0.jpg"></a>
+        <a id="thmbnl6" href="#"><img src="img/people/1312_valya/0.jpg"></a>
+        <a id="thmbnl5" href="#"><img src="img/people/1312_kobec/0.jpg"></a>
+        <a id="thmbnl4" href="#"><img src="img/people/1311_borysovych/0.jpg"></a>
+        <a id="thmbnl3" href="#"><img src="img/people/1310_lyoha/0.jpg"></a>
+        <a id="thmbnl2" href="#"><img src="img/people/1310_alenka/0.jpg"></a>
+        <a id="thmbnl1" href="#"><img src="img/people/1308_maksik/0.jpg"></a>
+        <a id="thmbnl0" href="#"><img src="img/people/1308_artemka/0.jpg"></a>
+      </div>
+	</div>
+    <div class="buffer"></div>
+  </div>
+
+  <div class="footer">&copy; Valentyn Danilichev</div>
+
+  <script type="text/javascript" src="js/cascade-gallery.js"></script>
     <script>
         window.onload = function() {
             gallery.init(
