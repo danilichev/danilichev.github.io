@@ -106,7 +106,8 @@ html, body {
 
 object.emblem {
   height: 100%;
-  margin-left: 0;
+  width: auto;
+  position: relative;
 }
 
 /* Larger than mobile */
