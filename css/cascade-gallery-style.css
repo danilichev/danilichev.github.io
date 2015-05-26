@@ -48,10 +48,11 @@
 }
 
 #images-wrapper #description-wrapper #close-button {
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.2rem;
+  height: 1.2em;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  margin-top: 0.2rem;
   float: right;
   text-align: right;
   cursor: pointer;
@@ -68,16 +69,4 @@
   font-size: 1rem;
   font-style: italic;
   text-align: justify;
-}
-
-#thumbnails-wrapper img {
-  width: 96px;
-  height: auto;
-}
-
-@media (min-width: 400px) {
-  #thumbnails-wrapper img {
-    width: auto;
-    height: auto;
-  }
 }

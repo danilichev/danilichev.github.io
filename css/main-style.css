@@ -16,32 +16,34 @@ html, body {
 
 #drawer {
   width: 100%;
-  height: 100%;
   left: -100%;
   top: 0;
-  padding-top: 72px;
+  padding-top: 48px;
+  padding-bottom: 1rem;
   position: fixed;
   z-index: 1;
   text-align: center;
-  font-size: 1.8em;
-  line-height: 1.5;
+  font-size: 1.25rem;
+  line-height: 1.25;
   letter-spacing: 0;
   overflow-x: hidden;
   overflow-y: auto;
   background-color: white;
-  -webkit-box-shadow: 4px 0px 2px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow:    4px 0px 2px 0px rgba(0, 0, 0, 0.4);
-  box-shadow:         4px 0px 2px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow:    0px 4px 2px 0px rgba(0, 0, 0, 0.4);
+  box-shadow:         0px 4px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
+
 #drawer-toggle-label {
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 26px;
   display: block;
   position: fixed;
   top: 0;
   left: 0;
-  margin: 12px;
+  margin-top: 12px;
+  margin-left: 12px;
   z-index: 2;
   cursor: pointer;
   background-image: url(../img/menu.svg);
@@ -114,33 +116,30 @@ object.emblem {
 @media (min-width: 400px) {
   #drawer {
     width: 50%;
+    height: 100%;
     left: -50%;
-    line-height: 1.6; }
-
-  #drawer-toggle-label {
-    width: 40px;
-    height: 40px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    -webkit-box-shadow: 4px 0px 2px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow:    4px 0px 2px 0px rgba(0, 0, 0, 0.4);
+    box-shadow:         4px 0px 2px 0px rgba(0, 0, 0, 0.4);
   }
-
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
   #drawer {
     width: 25%;
+    height: 100%;
     left: -25%;
-    line-height: 1.7;
-  }
-
-  #drawer-toggle-label {
-    width: 32px;
-    height: 32px;
+    font-size: 1.75rem;
+    line-height: 1.75;
   }
 }
 
 h1, h2, h3 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 300; }
 h1 { font-size: 2.4rem; line-height: 1; letter-spacing: -.08rem; }
 h2 { font-size: 1.8rem; line-height: 1.2;  letter-spacing: -.05rem; }
