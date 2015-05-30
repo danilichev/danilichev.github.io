@@ -23,8 +23,9 @@ html, body {
   position: fixed;
   z-index: 1;
   text-align: center;
+  color: black;
   font-size: 1.25rem;
-  line-height: 1.25;
+  line-height: 1.5;
   letter-spacing: 0;
   overflow-x: hidden;
   overflow-y: auto;
@@ -53,7 +54,8 @@ html, body {
 #drawer-toggle { display: none; }
 
 #drawer-toggle:checked ~ #drawer {
-  left: 0; }
+  left: 0;
+}
 
 #drawer li {
 	list-style-type: none;
@@ -71,6 +73,14 @@ html, body {
 
 #drawer a.dot {
 	border-bottom: 1px dotted black;
+}
+
+
+#drawer .current-page {
+  width: 100%;
+  letter-spacing: 0.2rem;
+  color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 #content {
@@ -95,6 +105,31 @@ html, body {
   padding-top: 0.8rem;
   font-size: 0.8rem;
   text-align: center;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.main img, object {
+  position: static;
+  width:auto;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.main .message {
+  position: relative;
+  width: 100%;
+  padding: 0 0.5rem;
+  text-align: justify;
 }
 
 .emblem-wrapper {
@@ -124,6 +159,11 @@ object.emblem {
     -moz-box-shadow:    4px 0px 2px 0px rgba(0, 0, 0, 0.4);
     box-shadow:         4px 0px 2px 0px rgba(0, 0, 0, 0.4);
   }
+
+  .container {
+    width: 85%;
+    padding: 0;
+  }
 }
 
 /* Larger than tablet */
@@ -134,6 +174,10 @@ object.emblem {
     left: -25%;
     font-size: 1.75rem;
     line-height: 1.75;
+  }
+
+  .container {
+    width: 75%;
   }
 }
 
