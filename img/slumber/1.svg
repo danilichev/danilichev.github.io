@@ -1,7 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" 
 	id="svg" width="800" height="480" 
 	viewBox="0 0 800 480" 
-	onclick="slumber.run()">
+	onload="slumber.runStop()"
+	onclick="slumber.runStop()">
 <pattern id="hatch" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
 	<g style="fill:none; stroke:black; stroke-width:12">
 		<path d="M0,10 l20,0"/>
@@ -48,7 +49,7 @@
 			theta = 0,
 			deltaTheta = 0.5;
 			
-		var run = function() {
+		var runStop = function() {
 			if (timer === 0) { 
 				startAction();
 			} else {
@@ -88,7 +89,7 @@
 		}
 		
 		return {
-			run: run
+			runStop: runStop
 		}	
 	})();
 ]]></script>
