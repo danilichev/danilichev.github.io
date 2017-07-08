@@ -1,19 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" 
-	id="svg" width="800" height="480" 
-	viewBox="0 0 800 480" 
-	onload="slumber.runStop()"
-	onclick="slumber.runStop()">
-<pattern id="hatch" patternUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
-	<g style="fill:none; stroke:black; stroke-width:12">
-		<path d="M0,10 l20,0"/>
-	</g>
-</pattern>
-<rect width="100%" height="100%" style="fill: url(#hatch); stroke: black; stroke-width: 5px"></rect>
+<svg xmlns="http://www.w3.org/2000/svg"
+	id="svg" width="640" height="640"
+	viewBox="0 0 640 640"
+	onload="slumber.run()">
 <g id="circles" style="fill: black; stroke: white; stroke-width: 2px;">
-	<circle cx="32%" cy="50%" r="122"></circle>
-	<circle cx="68%" cy="50%" r="122"></circle>
+	<circle cx="20%" cy="50%" r="20%"></circle>
+	<circle cx="80%" cy="50%" r="20%"></circle>
 </g>
-<circle cx="50%" cy="50%" r="150" style="fill: white; stroke: black; stroke-width: 5px"></circle>
+<circle cx="50%" cy="50%" r="160" style="fill: white; stroke: black; stroke-width: 5px"></circle>
 <circle cx="50%" cy="50%" r="4" style="fill: black;"></circle>
 <circle id="circle01" cx="50%" cy="50%" r="50" style="fill: none; stroke: black; stroke-width: 4px"></circle>
 <circle id="circle02" cx="50%" cy="50%" r="50" style="fill: none; stroke: black; stroke-width: 3px"></circle>
@@ -28,9 +21,9 @@
 		var drawFPS = 60,
 			timer = 0,
 			transformObject;
-		
+
 		var svg = document.getElementById('svg');
-		
+
 		var circle01 = document.getElementById('circle01'),
 			circle02 = document.getElementById('circle02'),
 			circle03 = document.getElementById('circle03'),
@@ -40,33 +33,24 @@
 			circle13 = document.getElementById('circle13'),
 			circle14 = document.getElementById('circle14'),
 			circles = document.getElementById('circles');
-		
-		var radius01 = radius11 = 75, 
+
+		var radius01 = radius11 = 80,
 			radius02, radius03, radius04,
 			radius12, radius13, radius14,
 			doubleRadius = radius01 + radius11,
 			delta = 0.5,
 			theta = 0,
 			deltaTheta = 0.5;
-			
-		var runStop = function() {
-			if (timer === 0) { 
-				startAction();
-			} else {
-				clearInterval(timer);
-				timer = 0;
-			}
-		}
-		
+
 		var startAction = function() {
 			transformObject = svg.createSVGTransform();
 			circles.transform.baseVal.appendItem(transformObject);
-		
+
 			timer = setInterval(action, 2000/drawFPS);
 		}
 
 		var action = function() {
-			if (radius01 > 145 || radius01 < 5) delta *= (-1); 
+			if (radius01 > 156 || radius01 < 8) delta *= (-1);
 			radius01 += delta;
 			radius02 = radius01 * 0.75;
 			radius03 = radius01 * 0.5;
@@ -83,14 +67,14 @@
 			circle12.setAttributeNS(null, "r", radius12);
 			circle13.setAttributeNS(null, "r", radius13);
 			circle14.setAttributeNS(null, "r", radius14);
-			
-			circles.transform.baseVal.getItem(0).setRotate(theta, 400, 240);
+
+			circles.transform.baseVal.getItem(0).setRotate(theta, 320, 320);
 			theta += deltaTheta;
 		}
-		
+
 		return {
-			runStop: runStop
-		}	
+			run: startAction
+		}
 	})();
 ]]></script>
 </svg>
